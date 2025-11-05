@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RT MOBILE – RT WORLD Digital India</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #005bbb, #ff6600);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header img {
+      width: 120px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background: #003d80;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 30px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #005bbb;
+      margin-bottom: 10px;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .service-card {
+      background: white;
+      width: 250px;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .service-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background: linear-gradient(90deg, #005bbb, #ff6600);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #003d80;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .thankyou {
+      display: none;
+      color: green;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    @media (max-width: 600px) {
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo-rtworld.jpg" alt="RT MOBILE Logo">
+    <h1>RT MOBILE</h1>
+    <p>RT WORLD Digital India – Mobile & Home Appliance Repair Services</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>हमारे बारे में</h2>
+    <p>हम RT MOBILE, आपके सभी मोबाइल, टीवी, फ्रिज, और CCTV कैमरा इंस्टॉलेशन के लिए भरोसेमंद समाधान प्रदान करते हैं।  
+    हमारी टीम घर पर सर्विस और रिपेयरिंग दोनों सेवाएँ देती है।</p>
+  </section>
+
+  <section id="services">
+    <h2>हमारी सेवाएँ</h2>
+    <div class="services">
+      <div class="service-card">📱 Mobile Repairing</div>
+      <div class="service-card">🎧 Accessories</div>
+      <div class="service-card">📺 TV / Fridge Repair</div>
+      <div class="service-card">🏠 Home Service</div>
+      <div class="service-card">🎥 CCTV Installation</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Service Book करें</h2>
+    <form name="serviceForm" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="serviceForm">
+      <input type="text" name="name" placeholder="आपका नाम" required>
+      <input type="tel" name="phone" placeholder="आपका मोबाइल नंबर" required>
+      <input type="text" name="address" placeholder="आपका पता" required>
+      <select name="service" required>
+        <option value="">सेवा चुनें</option>
+        <option>Mobile Repairing</option>
+        <option>Accessories</option>
+        <option>TV / Fridge Repair</option>
+        <option>Home Service</option>
+        <option>CCTV Installation</option>
+      </select>
+      <button type="submit">बुकिंग भेजें</button>
+      <p class="thankyou">✅ धन्यवाद! आपका अनुरोध प्राप्त हो गया है। हम जल्द ही संपर्क करेंगे।</p>
+    </form>
+  </section>
+
+  <section>
+    <h2>हमारा स्थान</h2>
+    <iframe src="https://www.google.com/maps?q=Near%20Kalipada%20Rd%2C%20Navada%2C%20Baliapal%2C%20Baleswer%2C%20Odisha&output=embed"></iframe>
+  </section>
+
+  <footer>
+    <p>📞 7440173312 | 📧 rajtapan2020@gmail.com</p>
+    <p>📍 Near Kalipada Rd, Navada, Baliapal, Baleswer, Odisha</p>
+    <p>© 2025 RT MOBILE – RT WORLD Digital India</p>
+  </footer>
+
+  <script>
+    // Thank You message display
+    const form = document.querySelector("form");
+    const thankyou = document.querySelector(".thankyou");
+    form.addEventListener("submit", () => {
+      thankyou.style.display = "block";
+      setTimeout(() => thankyou.style.display = "none", 4000);
+    });
+  </script>
+</body>
+</html>
